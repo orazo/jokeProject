@@ -7,6 +7,7 @@ import Top from '../components/Top';
 import Header from '../components/Header';
 import Bottom from '../components/Bottom';
 const ListScreen = props => {
+  console.disableYellowBox = true;
   const TOP_HEIGHT = 150;
   const {jokes, passToNextPage} = props;
   const [data, setData] = useState({

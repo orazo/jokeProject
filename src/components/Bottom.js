@@ -14,7 +14,7 @@ const Bottom = props => {
         paddingTop: 46,
         backgroundColor: 'white',
       }}>
-      <Text style={{alignSelf: 'center'}}>{`מידע על עמוד ${page}`}</Text>
+      <Text style={{alignSelf: 'center'}}>{`מידע עד עמוד ${page}`}</Text>
     </View>
   );
 };
