@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {SafeAreaView, StyleSheet, Alert} from 'react-native';
 import Row from '../components/Row';
-import axios from 'axios';
 import Animated, {Extrapolate} from 'react-native-reanimated';
 import Top from '../components/Top';
 import Header from '../components/Header';
@@ -65,7 +64,6 @@ const ListScreen = props => {
         style={{
           flex: 1,
           marginTop: scrollMarginY,
-          // transform: [{translateY: headerY}],
         }}
         onScroll={event => {
           scrollY.setValue(event.nativeEvent.contentOffset.y);
@@ -84,11 +82,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    // margin: 50,
     borderColor: 'black',
     borderWidth: 1,
     borderRadius: 20,
-    // padding: 10,
     height: 100,
   },
 });
