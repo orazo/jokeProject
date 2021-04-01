@@ -1,0 +1,6 @@
+{
+  "editor.minimap.maxColumn": 140,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "workbench.editor.enablePreview": false
+}
