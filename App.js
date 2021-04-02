@@ -18,7 +18,7 @@ const App = () => {
       method: 'get',
       url: 'https://icanhazdadjoke.com/search',
       headers: {'Content-Type': 'application/json', accept: 'application/json'},
-      params: {limit: limit || 20, page: page || 1},
+      params: {limit: limit, page: page},
     };
   }
   const getData = async (limit, page) => {
@@ -36,7 +36,7 @@ const App = () => {
       });
   };
   useEffect(() => {
-    getData().then(res => {
+    getData(20, 1).then(res => {
       setJokes(res);
     });
   }, []);
